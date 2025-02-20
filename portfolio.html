@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rashad - Portfolio</title>
+    <style>
+        /* Modern color palette and styling */
+        :root {
+            --primary: #2dd4bf;        /* Teal */
+            --secondary: #0f172a;      /* Dark slate */
+            --accent: #818cf8;         /* Indigo */
+            --background: #f8fafc;     /* Light gray */
+            --text: #334155;          /* Slate */
+            --card: #ffffff;          /* White */
+        }
+
+        body {
+            font-family: 'Inter', 'SF Pro Display', -apple-system, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        nav {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: -3rem auto 0;
+            padding: 2rem;
+            position: relative;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            border-radius: 20px;
+            background-color: var(--card);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h1, h2, h3 {
+            color: var(--secondary);
+        }
+
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skills li:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card {
+            background-color: var(--card);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-tag {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+        }
+
+        .tech-tag:hover {
+            background-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .education-item {
+            background: linear-gradient(135deg, var(--card), #f8fafc);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        /* Added animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        section {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABDUL RASHAD</h1>
+        <p>Full Stack Developer | Creative Problem Solver</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm ABDUL RASHAD, a passionate full-stack developer dedicated to crafting elegant solutions through code. With a keen eye for detail and a love for clean, efficient code, I transform ideas into seamless digital experiences. Currently pursuing my BTech in CSE, I'm always excited to take on new challenges and push the boundaries of what's possible in web development.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>npm</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <article class="project-card">
+                <h3>Weather App</h3>
+                <p>A dynamic weather application built with React and OpenWeather API, featuring real-time weather updates, location-based forecasts, and responsive design for all devices.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">API</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
+                <a href="https://github.com/Abdulrashad22/weather-app">View Project</a>
+            </article>
+
+            <article class="project-card">
+                <h3>Task Management System</h3>
+                <p>Full-stack task management application using MERN stack. Features include user authentication, task CRUD operations, and priority management.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                </div>
+                <a href="https://github.com/Abdulrashad22/task-manager">View Project</a>
+            </article>
+
+            <article class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio website built with HTML, CSS, and JavaScript. Features responsive design and modern UI/UX principles.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <a href="https://github.com/Abdulrashad22/portfolio">View Project</a>
+            </article>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements & Recognition</h2>
+            <div class="project-card">
+                <h3>Professional Milestones</h3>
+                <ul>
+                    <li>Successfully completed 10+ client projects with 100% satisfaction rate</li>
+                    <li>Led a team of 3 developers in creating a full-stack e-commerce platform</li>
+                    <li>Received recognition for outstanding problem-solving skills</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Keshav Memorial Institute of Technology (KMIT)</h3>
+                <p>Bachelor of Technology in Computer Science and Engineering</p>
+                <p>2022-2026</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Data Structures</span>
+                    <span class="tech-tag">Algorithms</span>
+                    <span class="tech-tag">Web Development</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Let's Connect</h2>
+            <ul class="contact-info">
+                <li>📧 Email: <a href="mailto:abdulrashad780@example.com">abdulrashad780@example.com</a></li>
+                <li>📱 Phone: <a href="tel:+1234567890">123-456-7890</a></li>
+                <li>💼 LinkedIn: <a href="https://linkedin.com/in/ABDUL RASHAD">linkedin.com/in/ABDUL RASHAD</a></li>
+                <li>👨‍💻 GitHub: <a href="https://github.com/Abdulrashad22">github.com/Abdulrashad22</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ABDUL RASHAD. All rights reserved.</p>
+    </footer>
+</body>
+</html>
