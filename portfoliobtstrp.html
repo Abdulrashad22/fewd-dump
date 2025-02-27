@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rashad - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS to handle styles not covered by Bootstrap -->
+    <style>
+        :root {
+            --primary: #2dd4bf;        
+            --secondary: #0f172a;      
+            --accent: #818cf8;         
+            --background: #f8fafc;    
+            --text: #334155;          
+        }
+
+        body {
+            font-family: 'Inter', 'SF Pro Display', -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .custom-nav {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            display: inline-block;
+            padding: 0.5rem;
+        }
+
+        .custom-nav .nav-link {
+            color: white;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            margin: 0 0.25rem;
+        }
+
+        .custom-nav .nav-link:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .skill-item {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+            border-radius: 16px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .tech-tag {
+            background-color: var(--primary);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-tag:hover {
+            background-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        /* Added animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animated-section {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <header class="mb-5">
+        <h1 class="fw-bold">ABDUL RASHAD</h1>
+        <p class="lead">Full Stack Developer | Creative Problem Solver</p>
+        <nav class="custom-nav mt-4">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mt-n5 position-relative">
+        <section id="about" class="animated-section bg-white shadow rounded-4 p-4 mb-5">
+            <h2 class="mb-3">About Me</h2>
+            <p>Hello! I'm ABDUL RASHAD, a passionate full-stack developer dedicated to crafting elegant solutions through code. With a keen eye for detail and a love for clean, efficient code, I transform ideas into seamless digital experiences. Currently pursuing my BTech in CSE, I'm always excited to take on new challenges and push the boundaries of what's possible in web development.</p>
+        </section>
+
+        <section id="skills" class="animated-section bg-white shadow rounded-4 p-4 mb-5">
+            <h2 class="mb-4">Technical Skills</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">HTML5</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">CSS3</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">JavaScript</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">Java</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">React</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">Node.js</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">Express.js</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">MySQL</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">MongoDB</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">Git</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">GitHub</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">npm</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-item p-3">SQL</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="animated-section bg-white shadow rounded-4 p-4 mb-5">
+            <h2 class="mb-4">Featured Projects</h2>
+            
+            <div class="card project-card mb-4 shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="card-title">Weather App</h3>
+                    <p class="card-text">A dynamic weather application built with React and OpenWeather API, featuring real-time weather updates, location-based forecasts, and responsive design for all devices.</p>
+                    <div class="mb-3">
+                        <span class="tech-tag badge px-3 py-2">React</span>
+                        <span class="tech-tag badge px-3 py-2">API</span>
+                        <span class="tech-tag badge px-3 py-2">CSS3</span>
+                    </div>
+                    <a href="https://github.com/Abdulrashad22/weather-app" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <div class="card project-card mb-4 shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="card-title">Task Management System</h3>
+                    <p class="card-text">Full-stack task management application using MERN stack. Features include user authentication, task CRUD operations, and priority management.</p>
+                    <div class="mb-3">
+                        <span class="tech-tag badge px-3 py-2">MongoDB</span>
+                        <span class="tech-tag badge px-3 py-2">Express</span>
+                        <span class="tech-tag badge px-3 py-2">React</span>
+                        <span class="tech-tag badge px-3 py-2">Node.js</span>
+                    </div>
+                    <a href="https://github.com/Abdulrashad22/task-manager" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+
+            <div class="card project-card mb-4 shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="card-title">Portfolio Website</h3>
+                    <p class="card-text">Personal portfolio website built with HTML, CSS, and JavaScript. Features responsive design and modern UI/UX principles.</p>
+                    <div class="mb-3">
+                        <span class="tech-tag badge px-3 py-2">HTML5</span>
+                        <span class="tech-tag badge px-3 py-2">CSS3</span>
+                        <span class="tech-tag badge px-3 py-2">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/Abdulrashad22/portfolio" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="animated-section bg-white shadow rounded-4 p-4 mb-5">
+            <h2 class="mb-4">Achievements & Recognition</h2>
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="card-title">Professional Milestones</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Successfully completed 10+ client projects with 100% satisfaction rate</li>
+                        <li class="list-group-item">Led a team of 3 developers in creating a full-stack e-commerce platform</li>
+                        <li class="list-group-item">Received recognition for outstanding problem-solving skills</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="animated-section bg-white shadow rounded-4 p-4 mb-5">
+            <h2 class="mb-4">Education</h2>
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="card-title">Keshav Memorial Institute of Technology (KMIT)</h3>
+                    <p class="card-text">Bachelor of Technology in Computer Science and Engineering</p>
+                    <p class="card-text text-muted">2022-2026</p>
+                    <div>
+                        <span class="tech-tag badge px-3 py-2">Data Structures</span>
+                        <span class="tech-tag badge px-3 py-2">Algorithms</span>
+                        <span class="tech-tag badge px-3 py-2">Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="animated-section bg-white shadow rounded-4 p-4 mb-5">
+            <h2 class="mb-4">Let's Connect</h2>
+            <ul class="list-unstyled contact-info">
+                <li class="mb-3 d-flex align-items-center">
+                    <span class="me-3">📧</span> Email: <a href="mailto:abdulrashad780@example.com" class="ms-2">abdulrashad780@example.com</a>
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                    <span class="me-3">📱</span> Phone: <a href="tel:+1234567890" class="ms-2">123-456-7890</a>
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                    <span class="me-3">💼</span> LinkedIn: <a href="https://linkedin.com/in/ABDUL-RASHAD" class="ms-2">linkedin.com/in/ABDUL-RASHAD</a>
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                    <span class="me-3">👨‍💻</span> GitHub: <a href="https://github.com/Abdulrashad22" class="ms-2">github.com/Abdulrashad22</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">&copy; 2025 ABDUL RASHAD. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
